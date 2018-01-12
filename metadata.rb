@@ -10,7 +10,7 @@ version '5.1.3'
   supports os
 end
 
-depends 'postgresql', '= 5.0.1'
+depends 'postgresql', '= 6.1.1'
 
 source_url 'https://github.com/chef-cookbooks/database' if respond_to?(:source_url)
 issues_url 'https://github.com/chef-cookbooks/database/issues' if respond_to?(:issues_url)
