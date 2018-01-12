@@ -4,13 +4,13 @@ maintainer_email 'cookbooks@chef.io'
 license 'Apache 2.0'
 description 'provides LWRPs for common database tasks'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version '5.1.2'
+version '5.1.3'
 
 %w(amazon arch centos fedora freebsd oracle redhat scientific suse ubuntu).each do |os|
   supports os
 end
 
-depends 'postgresql', '>= 1.0.0'
+depends 'postgresql', '~> 5.2.1'
 
 source_url 'https://github.com/chef-cookbooks/database' if respond_to?(:source_url)
 issues_url 'https://github.com/chef-cookbooks/database/issues' if respond_to?(:issues_url)
